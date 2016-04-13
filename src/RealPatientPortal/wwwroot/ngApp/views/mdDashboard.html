@@ -1,0 +1,44 @@
+﻿<!--<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dash-doc">
+                        <img alt="doc pic" src="../images/doctor.png" height="130" width="110" />
+
+                        <div class="page-header">
+                            <h5 class="company-name">
+                                Your Health Now <small>Premier Houston Medical Group</small>
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>-->
+<div class="col-md-8" id="dash-greeting">
+    <h2>
+        Greetings
+    </h2>
+    <p>
+        Personalized message for user
+    </p>
+
+
+
+    <div class="flex-row flex-space-between flex-stretch">
+
+        <div class="dash" ng-repeat="dash in controller.dashes">
+            <a ui-sref="{{dash.state}}"> <img ng-src="{{dash.img}}" /> </a>
+            <div>
+                <div class="title flex-row">
+                    {{dash.title}}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--</div>
+        </div>
+    </div>
+</div>-->

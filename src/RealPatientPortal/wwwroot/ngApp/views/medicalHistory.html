@@ -1,0 +1,58 @@
+﻿<div>
+    <form ng-submit="">
+        <div>
+            <h3>Patient Medical Details</h3>
+            <hr />
+            <div class="form-group">
+                <label class="col-sm-2">Height:</label>
+                <div class="col-sm-4"><input type="text" class="form-control" ng-model="" /></div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2">Weight:</label>
+                <div class="col-sm-4"><input type="text" class="form-control" ng-model="" /></div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2">BMI:</label>
+                <div class="col-sm-4"><input type="text" class="form-control" ng-model="" /></div>
+            </div>
+            <div><input class="register" type="submit" value="Register"></div>
+        </div>
+
+        <h4>Conditions</h4>
+        <div class="form-group">
+            <label class="col-sm-2">Problem:</label>
+            <div class="col-sm-4">
+                <select name="conditions" class="form-control" ng-model="">
+                    <option value="alzheimers">Alzheimer's Disease</option>
+                    <option value="asthma">Asthma</option>
+                    <option value="copd">Chronic Obstructive Pulmonary Disease</option>
+                    <option value="chf">Congestive Heart Failure</option>
+                    <option value="dm">Diabetes Mellitus Type II</option>
+                    <option value="pregnant">Pregnant</option>
+                    <option value="obesity">Obesity</option>
+                </select>
+            </div>
+        </div>
+
+        <h4>Allergies</h4>
+        <div class="form-group">
+            <label class="col-sm-2">Check all that apply:</label><br />
+            <div class="col-sm-4">
+                <input type="checkbox" value="abt" /> Antibiotic drugs <br />
+                <input type="checkbox" value="nsaids" /> NSAIDs <br />
+                <input type="checkbox" value="chemo" /> Chemotherapy drugs <br />
+                <input type="checkbox" value="hiv" /> HIV drugs <br />
+                <input type="checkbox" value="ivpain" /> IV Painkillers <br />
+                <input type="checkbox" value="insulin" /> Insulin <br />
+                <input type="checkbox" value="nkda" /> NKDA <br />
+            </div>
+        </div>
+
+
+        <h4>Medications</h4>
+        <div class="form-group">
+            <label for="meds" class="col-sm-2">Please list all medications:</label>
+            <div class="col-sm-4"><textarea class="form-control" rows="5" id="meds" ng-model=""></textarea></div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,51 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="page-header">
+                        <h1 class="company-name">
+                            Your Health Now <small>Premier Houston Medical Group</small>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-md-4" id="doc-logo">
+                    <img alt="Doc Pic" src="../../images/doctor.png" height="150" width="130" />
+                </div>
+            </div>
+            <form ng-submit="controller.login()" class="form-horizontal" role="form" id="mdLogin">
+                <div class="form-group">
+
+                    <label for="inputEmail" class="col-sm-2 control-label">
+                        MD Email:
+                    </label>
+                    <div class="col-sm-10">
+                        <input ng-model="controller.loginUser.email" class="form-control" id="inputIdNumber" />
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <label for="inputPassword4" class="col-sm-2 control-label">
+                        Password:
+                    </label>
+                    <div class="col-sm-10">
+                        <input ng-model="controller.loginUser.password" type="password" class="form-control" id="inputPassword4" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+
+                        <button type="submit" class="btn btn-default">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="bottomLink">
+            <a ui-sref="home">Home</a>
+        </div>
+    </div>
+</div>
